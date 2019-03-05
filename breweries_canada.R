@@ -26,9 +26,6 @@ length(breweries_raw)
 breweries_clean <- breweries_raw %>% str_replace_all("\\n", "") %>% str_trim()
 length(breweries_clean)
 
-register_google(key = "AIzaSyDCmcP9DUL5Vt6nVt3bfg2uGxdVs3AazVY", write = TRUE)
-
-set.api.key("AIzaSyDCmcP9DUL5Vt6nVt3bfg2uGxdVs3AazVY")
 
 #Subset the data we want and turn it into a dataframe
 #Using the matrix command we can specify we want four columns out of this character vector
